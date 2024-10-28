@@ -1,9 +1,9 @@
-# MSX拡張Cartridge<BR>esePana Amusement Cartridge  
+# MSX Cartridge<BR>ese Pana Amusement Cartridge  
+
+Es un cartucho de expansión compatible con el "Pana Amusement Cartridge" para MSX lanzado por Panasonic. El original utilizaba SRAM, pero este modelo emplea FRAM, lo que permite usarlo como sustituto en caso de fallo de la batería de SRAM del cartucho original.
+
 ![ケース入り](./PCB/Image3.jpg)  
 ![ケース無し](./PCB/Image1.jpg)  
-
-パナソニックから出ていた、MSX用の拡張カートリッジ「Pana Amusement Cartridge」の互換品です。  
-本家の方はSRAMでしたが、FRAMを使用しており、SRAMバッテリ切れの同カセットの救済用として使用する事ができます。
 
 参考資料(対応ソフト情報など）：  
 https://ja.wikipedia.org/wiki/パナアミューズメントカートリッジ  
