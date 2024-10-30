@@ -3,7 +3,6 @@
 Es un cartucho de expansión compatible con el "Pana Amusement Cartridge" para MSX lanzado por Panasonic. 
 El original utilizaba SRAM, pero este modelo emplea FRAM, lo que permite usarlo sin bateria.
 
-![ケース入り](./PCB/Image3.jpg)  
 ![ケース無し](./PCB/Image1.jpg)  
 
 参考資料(対応ソフト情報など）：  
