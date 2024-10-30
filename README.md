@@ -9,23 +9,20 @@ https://ja.wikipedia.org/wiki/パナアミューズメントカートリッジ
 カセットは、Boothおよび一部ショップにて販売予定です。  
 https://ifc.booth.pm/items/3479171  
 
-## ■ メモリマップ
+## ■ Mapa de memoria
 
-Pana Amusement Cartridgeと同一仕様です。
+Especificación idéntica a la del cartucho Pana Amusement.
 
 | Page (8kB)    | Switching address                  | Initial Setting                     |
 | ------------- | ---------------------------------- | ----------------------------------- |
 | 4000h ~ 5FFDh | 5FFEh = 4Dh / 5FFFh = 69h (Enable) | 5FFEh = 00h / 5FFFh = 00h (Disable) |
 
-参考：  
-https://www.msx.org/wiki/MegaROM_Mappers#PAC_.28Panasoft.29
-  
-## ■ FRAMの制御方法
-書き込みモードにするために、5FFEh = 4Dh / 5FFFh = 69hを書き込んでください。4000-5FFDhがRAM領域になります。  
-PACがスロットに実装されているか特定の識別方法はありません。  
-スロットを切り替えながら無いので切り替わったかどうかは、5FFEh = 4Dh / 5FFFh = 69hを書いた後に4000h ~ 5FFDhに  
-データを書いて確認してください。元々書いてあるデータを破損しないように注意して実装してください。  
-※読み書きプログラムでは、chkPacInSlot()で当該動作を実行しています。  
+## ■ Control de la FRAM
+Para cambiar al modo de escritura, escribe los valores 4Dh en la dirección 5FFEh y 69h en la dirección 5FFFh. Esto convertirá el rango de direcciones 4000h-5FFDh en un área de RAM.
+
+No existe un método específico para identificar si el PAC está implementado en el slot. Cambia de slot y verifica si se ha activado escribiendo los valores 4Dh en 5FFEh y 69h en 5FFFh, luego intenta escribir datos en el rango de direcciones 4000h ~ 5FFDh para confirmarlo. Ten cuidado de no dañar los datos originalmente escritos en esta área al implementar el código.
+
+※ En el programa de lectura y escritura, esta operación se ejecuta mediante la función chkPacInSlot(). 
 
 ## ■ PAC読み書き/書き込みプログラム
 PACへのRAM Read/Writeプログラムとして、pacread/pacwriteを同梱しています。   
