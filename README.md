@@ -30,9 +30,9 @@ Además, si tienes un FM-PAC, también puedes usar la utilidad call fmpac para e
 
 ● Lectura
 `>pacread.com [Archivo de salida]`  
-● Escritura  
+● Escritura
 `>pacwrite.com [Archivo de entrada]`  
-● Programa de prueba (no es estable）  
+● Programa de prueba (no es estable)
 `>pactest.com`  
 
 El código fuente puede compilarse con z88dk. Las opciones de compilación son las siguientes:  
