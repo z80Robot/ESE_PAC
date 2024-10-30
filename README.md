@@ -38,23 +38,5 @@ Además, si tienes un FM-PAC, también puedes usar la utilidad call fmpac para e
 El código fuente puede compilarse con z88dk. Las opciones de compilación son las siguientes:  
 `zcc +msx -create-app -subtype=msxdos -lmsxbios  main.c -o xxxx.com`  
   
-  
-## ■ 頒布基板について
-回路図およびガーバファイルが必要な場合はPCBのフォルダーを参考にしてください。  
-<img src="./PCB/Schematic/esePAC.png" width=800>  
-  
-## ■ CPLDについて
-CPLD Xillix XC9536XLの設計データはRTLのフォルダーを参照してください。  
-  
-## ■ カードリッジシェルについて
-RGRさんのTransparent Cartridge Shell for MSX Konami-styleに合う様に設計しています。  
-https://retrogamerestore.com/store/msx_cart_shell/  
-https://ifc.booth.pm/items/3240279  
-輸入と製造都合で若干の小傷がある場合があります。あらかじめご了承ください。  
-  
-頒布基板はASCII仕様のいくつかのシェルタイプに対応していますが、  
-すべてのタイプには対応していません。ご了承ください。  
-  
-![ケース入り](./PCB/Image3.jpg)
-
-
+## ■ CPLD
+CPLD Xillix XC9536XL
