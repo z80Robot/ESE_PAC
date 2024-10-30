@@ -24,19 +24,18 @@ No existe un método específico para identificar si el PAC está implementado e
 
 ※ En el programa de lectura y escritura, esta operación se ejecuta mediante la función chkPacInSlot(). 
 
-## ■ PAC読み書き/書き込みプログラム
-PACへのRAM Read/Writeプログラムとして、pacread/pacwriteを同梱しています。   
-いずれかのスロットに当該カードリッジを挿入し、以下コマンドを実行することによりRAMデータのバックアップと書き戻しが可能です。  
-また、FM-PACをお持ちの方は、call fmpacのユーティリティを使う事も可能です。  
+## ■ Programa de lectura/escritura
+Se incluyen los programas pacread y pacwrite para realizar operaciones de lectura y escritura en la RAM del PAC. Inserta el cartucho en cualquiera de los slots y ejecuta los siguientes comandos para realizar una copia de seguridad de los datos de la RAM y restaurarlos. 
+Además, si tienes un FM-PAC, también puedes usar la utilidad call fmpac para este propósito.
 
-●バックアップ(読み込み)  
-`>pacread.com [書き出しFile]`  
-●書き込み  
-`>pacwrite.com [書き込みFile]`  
-●テストプログラム（データが壊れるので注意してください）  
+● Lectura
+`>pacread.com [Archivo de salida]`  
+● Escritura  
+`>pacwrite.com [Archivo de entrada]`  
+● Programa de prueba (no es estable）  
 `>pactest.com`  
 
-ソースコードは、z88dkでコンパイル可能です。コンパイルオプションは下記になります。  
+El código fuente puede compilarse con z88dk. Las opciones de compilación son las siguientes:  
 `zcc +msx -create-app -subtype=msxdos -lmsxbios  main.c -o xxxx.com`  
   
   
