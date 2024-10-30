@@ -1,7 +1,6 @@
 # PAC - Pana Amusement Cartridge  
 
-Es un cartucho de expansión compatible con el "Pana Amusement Cartridge" para MSX lanzado por Panasonic. 
-El original utilizaba SRAM, pero este modelo emplea FRAM, lo que permite usarlo sin bateria.
+Es un cartucho de expansión compatible con el "Pana Amusement Cartridge" para MSX lanzado por Panasonic. El original utilizaba SRAM, pero este modelo emplea FRAM que no requiere bateria para mantener los datos en la memoria.
 
 ![ケース無し](./PCB/Image1.jpg)  
 
