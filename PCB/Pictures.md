@@ -1,3 +1,3 @@
-![ケース無し](Image1.jpg)
-![ケース無し](Image2.jpg)
-![ケース無し](Image3.jpg)
+![Frontal](Image1.jpg)
+![Trasera](Image2.jpg)
+![Carcasa](Image3.jpg)
